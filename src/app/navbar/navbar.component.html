@@ -1,0 +1,48 @@
+<!-- <nav
+  class="sticky top-0 z-50 bg-gradient-to-r from-indigo-200 from-10% via-sky-200 via-30% to-emerald-200 to-50%"
+> -->
+<nav class="p-6 shadow">
+  <div class="container mx-auto flex flex-wrap justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <a routerLink="/" class="text-black-700 text-lg font-bold">Recharge</a>
+      <ul class="flex space-x-4">
+        <li>
+          <a
+            routerLink="/"
+            class="text-black-500 font-semibold hover:text-purple-700 cursor-pointer"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/about"
+            class="text-black-500 font-semibold hover:text-purple-700 cursor-pointer"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/contact"
+            class="text-black-500 font-semibold hover:text-purple-700 cursor-pointer"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-center space-x-2 mt-4 sm:mt-0 w-full sm:w-auto">
+      <input
+        type="text"
+        placeholder="Search..."
+        [(ngModel)]="query"
+        (keyup.enter)="onSearch()"
+        class="p-2 rounded-md border border-blue-300 focus:outline-none focus:ring focus:ring-blue-400 text-sm sm:text-base w-full sm:w-48"
+      />
+      <button
+        (click)="onSearch()"
+        class="bg-blue-700 text-white px-3 py-2 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 text-sm sm:text-base w-full sm:w-auto"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</nav>
